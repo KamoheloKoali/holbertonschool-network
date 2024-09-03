@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Display only listening sockets with PID and program name
+
+sudo netstat -tulnp | awk 'NR==1 {print "Active Internet connections (only servers)"} NR>1 && /^tcp/ {print $0}'
+
+sudo netstat -ulnp | awk 'NR==1 {print "Active UNIX domain sockets (only servers)"} NR>1 && /^unix/ {print $0}'
