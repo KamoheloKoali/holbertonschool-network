@@ -1,6 +1,2 @@
-#!/usr/bin/env bash
-# Answer to what a MAC address is:
-echo "The unique identifier of a network interface"
-
-# Answer to what an IP address is:
-echo "Is to devices connected to a network what a postal address is to houses"
+2
+1
